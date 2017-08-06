@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<title>Woop - Portfolio Template</title>
+	<meta name="description" content="" />
+  	<meta name="keywords" content="" />
+	<meta name="robots" content="" />
+	<link href="css/reset.css" rel="stylesheet" type="text/css" />
+	<link href="css/960.css" rel="stylesheet" type="text/css" />
+	<link href="css/styles.css" rel="stylesheet" type="text/css" />
+	<link href="fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" />
+	
+	<script type="text/javascript" src="http://www.5imoban.net/download/jquery/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/smooth-scroll.js"></script>
+	<script type="text/javascript" src="js/jquery.sticky.js"></script>
+	<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<script type="text/javascript" src="js/jquery.easing-1.3.pack.js"></script>
+	<script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="cform.js"></script>
+	
+<script type="text/javascript"> // sticky nav bar 
+  $(document).ready(function(){
+    $("nav").sticky({topSpacing:0});
+  });
+</script>
+
+<script type="text/javascript"> // fancybox
+$(document).ready(function() {
+
+	/* This is basic - uses default settings */
+	
+	$("a.single_image").fancybox();
+	
+	/* Using custom settings */
+	
+	$("a#inline").fancybox({
+		'hideOnContentClick': true
+	});
+
+	/* Apply fancybox to multiple items */
+	
+	$("a.group").fancybox({
+		'transitionIn'	:	'elastic',
+		'transitionOut'	:	'elastic',
+		'speedIn'		:	600, 
+		'speedOut'		:	200, 
+		'overlayShow'	:	false
+	});
+	
+});
+</script>
+	
+</head>
+
+<div class="topbar"></div> <!-- top bar -->
+
+<div id="intro">
+	<div class="title">
+		<h1>
+		<span class="small"></span><br />
+		<span class="name">张雨驰</span><br />
+		<span class="intro_line"></span><span class="amp">&</span><span class="intro_line"></span><br />
+		<span class="small">个人博客</span></h1>
+	</div> <!-- end .title -->
+</div> <!-- end #intro -->
+
+
+<nav>
+	<ul>
+		<li><a href="#intro">首页</a></li>
+		<li><a href="#work">作品</a></li>
+		<!--
+		<li><a href="#services">服务</a></li>
+		-->
+		<li><a href="#about">简介</a></li>
+		<li><a href="#contact">联系方式</a></li>
+	</ul>
+</nav> <!-- end nav -->
+
+
+<div id="work">
+	<div class="container_16">
+		
+		<div class="subheader">
+			<div class="subheader_line"></div><h2>作品展示</h2><div class="subheader_line"></div>
+		</div>
+		
+		<div class="gallery">
+			<div class="grid_5">
+				<a href="vue-c2.html" target="_blank"><div class="screenshot1 ss"></div></a>
+				<p><span class="ss_text">vue留言板</span>
+				</p>
+			</div> 
+
+		        <div class="grid_5">
+				<a href="resume.html" target="_blank"><div class="screenshot1 ss"></div></a>
+				<p><span class="ss_text">个人简历</span>
+				</p>
+			</div>  
+
+
+                        <div class="grid_5">
+				<a href="flappybird_3.html" target="_blank"><div class="screenshot1 ss"></div></a>
+				<p><span class="ss_text">flappybird</span>
+				</p>
+			</div>  
+
+		</div><!-- end .gallery -->
+		
+	</div> <!-- end .container_16 -->
+</div> <!-- end #work -->
+
+<div class="work_bg_bottom"></div>
+
+ <!--
+<div id="services">
+	<div class="container_16">
+	
+		<div class="subheader">
+			<div class="subheader_line"></div><h2>services</h2><div class="subheader_line"></div>
+		</div>
+		
+		<div class="clear"></div>
+		
+		<div class="serv_icons">
+			<div class="grid_4">
+				<div class="serv_icon1"></div>
+				<h3>design</h3>
+				<p>I have traced the Rebel spies to her. Now she is my only link to finding their secret base. I want to come with you to Alderaan.</p>
+			</div>
+		
+			<div class="grid_4">
+				<div class="serv_icon2"></div>
+				<h3>development</h3>
+				<p>I have traced the Rebel spies to her. Now she is my only link to finding their secret base. I want to come with you to Alderaan.</p>
+			</div>
+		
+			<div class="grid_4">
+				<div class="serv_icon3"></div>
+				<h3>identity</h3>
+				<p>I have traced the Rebel spies to her. Now she is my only link to finding their secret base. I want to come with you to Alderaan.</p>
+			</div>
+			
+			<div class="grid_4">
+				<div class="serv_icon4"></div>
+				<h3>wordpress</h3>
+				<p>I have traced the Rebel spies to her. Now she is my only link to finding their secret base. I want to come with you to Alderaan.</p>
+			</div>
+		</div> <!-- end .serv_icons -->
+		
+	</div> <!-- end .container_16 -->
+</div> <!-- end #services -->
+-->
+
+<div class="services_bg_bottom"></div>
+
+<div id="about">
+	<div class="container_16">
+	
+		<div class="subheader">
+			<div class="subheader_line"></div><h2>简介</h2><div class="subheader_line"></div>
+		</div>
+	
+	<div class="grid_5">
+		<div class="about_pic"></div>
+		<div class="social">
+			<ul>
+
+			</ul>
+		</div> <!-- end .social -->
+	</div> <!-- end .grid_5 -->
+	
+	<div class="grid_6">
+			<div class="about_copy">
+			<h4>关于我</h4>
+			<p>我是一名毕业于河海大学常州校区，物联网专业的学生。</p>
+			<p>毕业后作为一名软件测试人员开始了职场生涯，在工作中逐渐对网页的设计，呈现产生了兴趣，开始学习JS相关知识</p>
+			<p>希望有更多的机会能了解和学习到这门令人惊叹的技术</p>
+		</div> <!-- end .about_copy -->
+	</div> <!-- end .grid_6 -->
+	
+	<div class="grid_5">
+		<div class="skills">
+			<h4>Skills</h4>
+			<ul>
+				<li><div class="skill1"><p>Jquery</p></div></li>
+				<li><div class="skill2"><p>Javascript</p></div></li>
+				<li><div class="skill3"><p>HTML/CSS</p></div></li>
+				<li><div class="skill4"><p>Bootstrap</p></div></li>
+				<li><div class="skill5"><p>Git</p></div></li>
+				<li><div class="skill6"><p>Node.js</p></div></li>
+			</ul>
+		</div> <!-- end .skills -->
+	</div> <!-- end .grid_5 -->
+	
+	</div> <!-- end .container_16 -->
+</div> <!-- end #about -->
+
+<div class="about_bg_bottom"></div>
+
+<div id="contact">
+	<div class="container_16">
+	
+		<div class="subheader">
+			<div class="subheader_line"></div><h2>联系方式</h2><div class="subheader_line"></div>
+		</div>
+		
+		<div class="grid_7">
+			<div class="contact_form">
+				<h4>发送给我</h4>
+				<form method="post">
+					<input type="text" name="Name" id="name" value="Name" onfocus="this.value = this.value=='Name'?'':this.value;" onblur="this.value = this.value==''?'Name':this.value;" />
+					<input type="text" name="Email" id="email" value="Email" onfocus="this.value = this.value=='Email'?'':this.value;" onblur="this.value = this.value==''?'Email':this.value;" />
+					<input type="text" value="Subject" id="subject" onfocus="this.value = this.value=='Subject'?'':this.value;" onblur="this.value = this.value==''?'Subject':this.value;" />
+					<textarea name="Message" id="body" onfocus="this.value = this.value=='Message'?'':this.value;" onblur="this.value = this.value==''?'Message':this.value;">Message</textarea>
+					<input type="submit" name="submit" id="submit" value="发送" class="submit-button" onClick="return check_values();" />
+				</form>
+				<div id="confirmation" style="display:none; position: relative; z-index: 600; font-family: 'Open Sans', sans-serif; font-weight: 300; font-size: 16px; color: #4e4e4e;"></div>
+			</div> <!-- end .contact_form -->
+				
+		</div> <!-- end .grid_7 -->
+				
+		<div class="grid_9">
+		
+			<div class="contact_info">
+				<h4>联系方式</h4>
+				<div class="grid_4 alpha">
+					<p><img src="img/icn_phone.png" alt="" /> +15261180397</p>
+					<p><img src="img/icn_mail.png" alt="" /> 304101705@qq.com</p>
+				</div>
+				<div class="grid_4 omega">
+					<p><img src="img/icn_address.png" alt="" /> 上海<br />
+					<span class="address">浦东新区</span><br />
+					</p>
+				</div>
+			</div> <!-- end .contact_info -->
+		
+			<div class="map">
+				<iframe class="map_frame" width="506" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.pt/maps?f=q&amp;source=s_q&amp;hl=pt-PT&amp;geocode=&amp;q=fifth+avenue+767+ny&amp;aq=&amp;sll=39.639538,-7.849731&amp;sspn=9.792035,19.753418&amp;ie=UTF8&amp;hq=&amp;hnear=767+5th+Ave,+New+York,+10022,+United+States&amp;t=m&amp;ll=40.763901,-73.973179&amp;spn=0.013002,0.043344&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br />
+			</div> <!-- end .map -->
+			
+		</div> <!-- end .grid_9 -->
+		
+	</div> <!-- end .container_16 -->
+</div> <!-- end #contact -->
+
+<div class="contact_bg_bottom"></div>
+
+<footer>
+	<p>&copy; 2012 All rights reserved</p>
+</footer>

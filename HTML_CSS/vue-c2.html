@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue-ºÚ“◊¡Ù—‘∞Â</title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <script src="https://cdn.bootcss.com/vue/2.2.2/vue.min.js"></script>
+    <style type="text/css">
+    lable
+	{
+        position:relative;
+	left:900px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <h1 class="text-center"><a href="#" class="">ºÚ“◊¡Ù—‘∞Â</a></h1>
+            </div>
+        </nav>
+    </header>
+    <div id="app">
+        <div class="container" style="margin-bottom: 20px;">
+            <input autofocus v-model="message" class="form-control" placeholder="«Î ‰»Î¡Ù—‘" @keyup.enter="add1">
+            <br>
+            <button @click="add1" class="btn btn-primary btn-block">Ã·Ωª</button>
+        </div>
+        <div class="container">
+            <div class="panel panel-default">
+                <div class="panel-heading">¡Ù—‘¡–±Ì</div>
+                <div class="panel-body">
+                    <ul class="list-group">
+                        <li class="list-group-item" v-for="array in array1">{{ array }}</li>
+                    </ul>
+                    <button @click="rem" class="btn btn-danger btn-block">«Âø’¡Ù—‘</button>
+                </div>
+            </div>
+        </div>
+		</br>
+	<form >
+	<div >
+                <lable>…æ≥˝µ•Ãı¡Ù—‘</lable>
+		<select id="danshan" v-model="target1" @click="shanchu" class="form-control">
+ 		 </select>
+	</div>
+	</form>
+	<p>{{target1}}</p>
+    </div>
+
+
+
+    <script>
+       var vm = new Vue({
+  	el: '#app',
+        data: {
+       		message: '',
+		array1:[],
+		k:0,
+		target1:'',
+ 	 },	
+	methods: {
+   	        add1:function(){
+			this.array1.push(this.message);
+       	       		this.k += 1;
+			var xuanxiang = document.getElementById("danshan");
+			if(this.array1.length > 0 ){
+				//alert(this.k);
+	 			 danshan.innerHTML += "<option>"+this.k+"</option> ";
+			}
+
+				},
+		rem:function(){
+			this.array1 = [];
+			danshan.innerHTML = ""
+			this.message='';
+			this.k = 0;
+			
+		},
+		shanchu:function(){
+			if(this.target1){
+				for(i=this.target1-1;i<this.array1.length;i++){
+				this.array1[i] = this.array1[i+1];
+				}
+				this.array1.pop();
+				this.target1 ='';
+				danshan.innerHTML = '';
+				for(j=1;j<=this.array1.length;j++){
+					 danshan.innerHTML += "<option>"+j+ "</option> ";
+					 this.k = j;   
+		  		}
+
+	  		 }
+	   		
+		}
+	}
+	})
+    </script>
+</body>
+
+</html>
