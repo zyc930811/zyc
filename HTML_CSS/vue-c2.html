@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Vue-숌弄즛喇겼</title>
+    <title>Vue-简易留言板</title>
     <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
     <script src="https://cdn.bootcss.com/vue/2.2.2/vue.min.js"></script>
     <style type="text/css">
@@ -22,31 +22,31 @@
     <header>
         <nav class="navbar navbar-default" role="navigation">
             <div class="container-fluid">
-                <h1 class="text-center"><a href="#" class="">숌弄즛喇겼</a></h1>
+                <h1 class="text-center"><a href="#" class="">简易留言板</a></h1>
             </div>
         </nav>
     </header>
     <div id="app">
         <div class="container" style="margin-bottom: 20px;">
-            <input autofocus v-model="message" class="form-control" placeholder="헝渴흙즛喇" @keyup.enter="add1">
+            <input autofocus v-model="message" class="form-control" placeholder="请输入留言" @keyup.enter="add1">
             <br>
-            <button @click="add1" class="btn btn-primary btn-block">瓊슥</button>
+            <button @click="add1" class="btn btn-primary btn-block">提交</button>
         </div>
         <div class="container">
             <div class="panel panel-default">
-                <div class="panel-heading">즛喇죗깊</div>
+                <div class="panel-heading">留言列表</div>
                 <div class="panel-body">
                     <ul class="list-group">
                         <li class="list-group-item" v-for="array in array1">{{ array }}</li>
                     </ul>
-                    <button @click="rem" class="btn btn-danger btn-block">헌왕즛喇</button>
+                    <button @click="rem" class="btn btn-danger btn-block">清空留言</button>
                 </div>
             </div>
         </div>
 		</br>
 	<form >
 	<div >
-                <lable>뇜데係즛喇</lable>
+                <lable>删除单条留言</lable>
 		<select id="danshan" v-model="target1" @click="shanchu" class="form-control">
  		 </select>
 	</div>
