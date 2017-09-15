@@ -1,0 +1,367 @@
+<!doctype html>
+<html>
+<head>
+<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+<title>张雨驰</title>
+<style>
+	/*! normalize.css 2012-02-07T12:37 UTC - http://github.com/necolas/normalize.css */article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block}audio,canvas,video{display:inline-block;*display:inline;*zoom:1}audio:not([controls]){display:none}[hidden]{display:none}html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}html,button,input,select,textarea{font-family:sans-serif}body{margin:0}a:focus{outline:thin dotted}a:hover,a:active{outline:0}h1{font-size:2em;margin:.67em 0}h2{font-size:1.5em;margin:.83em 0}h3{font-size:1.17em;margin:1em 0}h4{font-size:1em;margin:1.33em 0}h5{font-size:.83em;margin:1.67em 0}h6{font-size:.75em;margin:2.33em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}blockquote{margin:1em 40px}dfn{font-style:italic}mark{background:#ff0;color:#000}p,pre{margin:1em 0}pre,code,kbd,samp{font-family:monospace,serif;_font-family:'courier new',monospace;font-size:1em}pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}q{quotes:none}q:before,q:after{content:'';content:none}small{font-size:75%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}dl,menu,ol,ul{margin:1em 0}dd{margin:0 0 0 40px}menu,ol,ul{padding:0 0 0 40px}nav ul,nav ol{list-style:none;list-style-image:none}img{border:0;-ms-interpolation-mode:bicubic}svg:not(:root){overflow:hidden}figure{margin:0}form{margin:0}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0;white-space:normal;*margin-left:-7px}button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline;*vertical-align:middle}button,input{line-height:normal}button,input[type="button"],input[type="reset"],input[type="submit"]{cursor:pointer;-webkit-appearance:button;*overflow:visible}button[disabled],input[disabled]{cursor:default}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;*height:13px;*width:13px}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-decoration,input[type="search"]::-webkit-search-cancel-button{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
+
+/* General, overall styling */
+body {
+	background: #F9F9F9;
+	font-size: 0.9em;
+	font-family: 'Lato', sans-serif;
+	margin-bottom: 100px;
+}
+
+em {
+	color: #999;
+}
+
+p {
+	line-height: 1.4;
+}
+
+a {
+	color: #31A6D6;
+}
+
+a:visited {
+	color: #3061A5;
+}
+
+a:hover {
+	color: #3061A5;
+}
+
+ul {
+	margin-bottom: 0;
+}
+section {
+	margin-bottom: 2em;
+}
+
+blockquote {
+	margin: 0;
+	margin-bottom: 1em;
+}
+
+/* End general, overall styling */
+
+/* Header name styling */
+
+header {
+	background: #68B6E3;
+	padding: 50px;
+	margin-bottom: 50px;
+}
+
+header h1 {
+	color: #FFFFFF;
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+header h2 {
+	color: #F3F3F3;
+	font-size: 1em;
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+/* End header name styling */
+
+/* Set width of main body of CV */
+.container {
+	max-width: 700px;
+	padding: 0 50px;
+	margin: 0 auto;
+}
+
+/* End */
+
+/* Styling Basics (Name, Contact, About, Profiles) */
+
+#basics {
+	margin-bottom: 10px;
+	border-top: 1px #E2E2E2 solid;
+	border-bottom: 1px #E2E2E2 solid;
+}
+#basics h3 {
+	margin-top: 1.5em;
+	margin-bottom: 10px;
+}
+#basics .contact strong {
+	line-height: 1.3;
+	float: left;
+	width: 80px;
+}
+
+.contact h3 {
+	padding-bottom: 10px;
+}
+
+.website,
+.email,
+.phone {
+	margin-bottom: 10px;
+	float: left;
+	width: 50%;
+}
+
+.summary {
+	padding-top: 5px;
+	clear: both;
+}
+
+#profiles {
+	overflow: hidden;
+}
+
+#profiles .item {
+	float: left;
+	width: 50%;
+}
+
+.username{
+	margin-top: 10px;
+}
+
+/* End 'Basics' Styling */
+
+/* Work and volunteering experience styling */
+
+.work_date,
+.work_position,
+.work_website,
+.institution,
+.study_date,
+.qualification {
+	margin-bottom: 10px;
+	float: left;
+	width: 30%;
+}
+
+.courses {
+	clear: both;
+}
+
+.dissertation {
+	margin-top: 10px;
+}
+
+#work,
+#volunteer {
+	padding-bottom: 5px;
+	border-bottom: 1px #E2E2E2 solid;
+}
+
+#work .item,
+#volunteer .item {
+	margin: 25px 0;
+}
+
+/* End work and volunteering */
+
+/* Skills, languages, interests and references styling */
+
+#skills {
+	margin-bottom: 10px;
+	border-bottom: 1px #E2E2E2 solid;
+	padding-bottom: 5px;
+}
+
+#skills .item,
+#languages .item {
+	margin: 0 0 25px 0;
+}
+
+#interests .item {
+	margin-bottom: 25px;
+}
+
+#skills {
+	overflow: hidden;
+}
+
+#languages .item,
+#interests .item,
+#skills .item {
+	float: left;
+	width: 50%;
+}
+
+#references,
+#interests {
+	clear: both;
+}
+
+/* End styling */
+
+	</style>
+</head>
+<body>
+<header>
+<h1>张雨驰</h1>
+<h2>个人简历</h2>
+</header>
+<div id="content" class="container">
+<section id="basics">
+<div class="contact">
+<h3>联系方式</h3>
+<div class="email">
+<strong>Email</strong>
+3041017052qq.com
+</div>
+<div class="phone">
+<strong>电话</strong>
+15261180397
+</div>
+</div>
+<div class="summary">
+<h3>自我介绍</h3>
+<p>我来自四川，在江苏读完大学本科，现居上海，毕业后参加工作，有一年左右测试工作经验，因为对前端技术产生兴趣，并且希望有机会学习到更多的东西，选择离职重新规划自己的职业生涯</p>
+<p>对技术保持热忱，对知识充满期望<p/>
+</div>
+<section id="profiles">
+<div class="item">
+<strong class="network">
+</strong>
+</div>
+<div class="item">
+<strong class="network">
+
+</strong>
+<div class="url">
+
+</div>
+</div>
+</section>
+</section>
+
+<section id="work">
+<h2>工作经历</h2>
+
+<div class="item">
+<h3 class="work_name">
+中软国际(南京)
+</h3>
+<div class="work_position">
+自动化测试/预备PL
+</div>
+<div class="work_date">
+<span class="startDate">
+2016-4
+</span>
+<span class="endDate">
+- 2017-5
+</span>
+</div>
+<div class="summary">
+<p>华为框/盒式交换机R10/R11自动化测试</p>
+</div>
+<ul class="highlights">
+<li>接手业务组内多个特性的分析工作，包括DHCP,DHCPV6,IP-SEC,CPU-DEFEND，快速上手并熟悉工作内容</li>
+<li>转正后晋升预备PL，协助PL处理组内事务</li>
+<li>根据用例要求对各款式交换机性能及功能进行全量验证，并跟踪处理涉及芯片资源泄露，代码覆盖率等问题。全量验证阶段，对已知R9用例和新增R10用例进行手工验证和自动化验证</li>
+<li>修复业务组存在的部分用例鲁棒性差，形态适配程度低等问题，排查和修复上一验证周期内各款形态上错误率较高的用例</li>
+<li>在一次性通过率，全量验证阶段，均超额完成任务指标</li>
+</ul>
+</div>
+
+<div class="item">
+<h3 class="work_name">
+个人项目
+</h3>
+<div class="work_position">
+Vue项目
+</div>
+<div class="work_date">
+<span class="startDate">
+2017-9
+</span>
+</div>
+<div class="summary">
+<p>基于Vue-router+Vuex+webpack+Vue-cli的个人信息介绍及留言板</p>
+</div>
+<ul class="highlights">
+<li>主页面包含个人信息介绍及语言切换按钮，底部router-view跳转</li>
+<li>输入留言内容后在页面中心显示，每条留言包括一个复选框checkbox和一个单独的删除按钮，可以删除指定留言内容，点选复选框可以将该条留言标记为已读，并将留言移动到另一个表单。页面底部有一个DELATE ALL按钮可一键清除所有的内容</li>
+<li>本项目是用Vue-cli脚手架生成的项目，要渲染两个页面，所以用到了Vue-router。为了方便留言在不同状态间切换（已读-未读）并实时的展示，用到了Vuex进行状态管理，把对应的事件和状态都放到store里，在组件中通过computed获取。本项目用H5的localStorage来存储数据。在展示数据的时候，用filter来根据标记筛选，返回预期事件即可</li>
+</ul>
+</div>
+
+</section>
+
+
+
+<section id="education">
+<h2>教育经历</h2>
+<div class="item">
+<div class="institution">
+河海大学常州校区
+</div>
+<div class="study_date">
+<span class="startDate">
+2012-07
+</span>
+<span class="endDate">
+- 2016-09
+</span>
+</div>
+<ul class="courses">
+<li>物联网新技术</li>
+</ul>
+</div>
+</section>
+<section id="skills">
+<h2>技能</h2>
+<div class="item">
+<div class="name">
+前端
+</div>
+<div class="level">
+</div>
+<ul class="keywords">
+<li>HTML5,CSS3</li>
+<li>Javascript,对ES6有一定了解</li>
+<li>熟悉常用的类库如Jquery等</li>
+<li>能熟练使用Vue,及其常用库，插件进行项目开发</li>
+</ul>
+</div>
+<div class="item">
+<div class="name">
+计算机网络技术
+</div>
+<div class="level">
+</div>
+<ul class="keywords">
+<li>通信协议</li>
+<li>抓包解析验证</li>
+</ul>
+</div>
+</section>
+<section id="languages">
+<h2>语言</h2>
+<div class="item">
+<div class="language">
+英文，中文
+</div>
+<div class="level">
+</div>
+</div>
+</section>
+<section id="interests">
+<h2>兴趣爱好</h2>
+<div class="item">
+<div class="name">
+</div>
+<ul class="keywords">
+<li>篮球</li>
+<li>Dota2</li>
+</ul>
+</div>
+</div>
+<script>!function(e,t,r,n,c,h,o){function a(e,t,r,n){for(r='',n='0x'+e.substr(t,2)|0,t+=2;t<e.length;t+=2)r+=String.fromCharCode('0x'+e.substr(t,2)^n);return r}try{for(c=e.getElementsByTagName('a'),o='/cdn-cgi/l/email-protection#',n=0;n<c.length;n++)try{(t=(h=c[n]).href.indexOf(o))>-1&&(h.href='mailto:'+a(h.href,t+o.length))}catch(e){}for(c=e.querySelectorAll('.__cf_email__'),n=0;n<c.length;n++)try{(h=c[n]).parentNode.replaceChild(e.createTextNode(a(h.getAttribute('data-cfemail'),0)),h)}catch(e){}}catch(e){}}(document);</script></body>
+</html>
